@@ -11,7 +11,7 @@
     <a href="index.html">
       <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта для г. Седона" />
     </a>
-    <nav>
+    <nav aria-label="Навигация по сайту">
       <ul>
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
@@ -23,8 +23,8 @@
 
   <main>
     <section>
-      <h1>Поиск гостиницы в Седоне</h1>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+      <!--       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -63,7 +63,7 @@
 
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <!-- здесь будет input -->
+           здесь будет input 
           <div>
             <button type="button"></button>
             <div></div>
@@ -71,11 +71,11 @@
           </div>
           <button type="submit">Показать</button>
         </fieldset>
-      </form>
+      </form> -->
     </section>
 
     <section>
-      <h2>Количество найденных отелей и сортировка</h2>
+      <h2 class="visually-hidden">Количество найденных отелей и сортировка</h2>
       <p>Найдено: 3</p>
 
       <h3>Сортировка:</h3>
@@ -100,7 +100,7 @@
     </section>
 
     <section>
-      <h2>Найденное жилье</h2>
+      <h2 class="visually-hidden">Найденное жилье</h2 class="visually-hidden">
 
       <ul>
         <li>
@@ -140,7 +140,8 @@
           </div>
         </li>
         <li>
-          <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Фото апартеманетов Villas at Poco Diablo" />
+          <img src="img/villas-at-poco-diablo.jpg" width="135" height="90"
+            alt="Фото апартеманетов Villas at Poco Diablo" />
           <div>
             <h3><a href="#">Villas at Poco Diablo</a></h3>
 
@@ -169,9 +170,9 @@
     </div>
     <div>
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютуб</a></li>
+        <li><a href="#" aria-label="Седона в Твиттере"></a></li>
+        <li><a href="#" aria-label="Седона на Фейсбуке"></a></li>
+        <li><a href="#" aria-label="Седона на Ютубе"></a></li>
       </ul>
     </div>
 
