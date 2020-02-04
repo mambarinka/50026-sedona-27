@@ -70,4 +70,73 @@ html {
   color: rgba(0, 0, 0, 0.3)
 }
 
+/* БАННЕР */
+
+.intro-banner {
+  background-color: #81B3D2;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.intro-banner:after {
+  content: url("../img/intro-mask.svg");
+}
+
+/* ВВЕДЕНИЕ */
+
+.intro-text {
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.intro-text p:first-child {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.intro-text p:last-child {
+  line-height: 26px;
+  color: #333333;
+}
+
+/* ПРЕИМУЩЕСТВА И РЕКОМЕНДАЦИИ */
+
+.features-and-recommendations {
+  background-color: #ffffff;
+}
+
+.features-list,
+.recommendations-list {
+  list-style: none;
+}
+
+.feature-item,
+.recommendation-item {
+  text-align: center;
+}
+
+.feature-item:nth-child(-n+2) {
+  background-color: #81b3d2;
+}
+
+.recommendation-item {
+  background-color: #ffffff;
+}
+
+.features-list h3,
+.recommendations-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.feature-item-first h3,
+.feature-item-second h3{
+  color: #ffffff;
+}
 
