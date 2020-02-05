@@ -281,11 +281,16 @@ html {
 
 /* КОЛИЧЕСТВО И СОРТИРОВКА */
 
+.number-and-sorting {
+  background-color: #ffffff;
+}
+
 .number-of-housing {
   font-size: 21;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
 }
 
 .number-and-sorting h3 {
@@ -333,6 +338,10 @@ html {
 }
 
 /* НАЙДЕННОЕ ЖИЛЬЕ */
+
+.found-housing {
+  background-color: #ffffff;
+}
 
 .found-housing h3>a {
   font-size: 21px;
