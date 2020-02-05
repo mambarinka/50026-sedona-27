@@ -4,19 +4,22 @@
 <head>
   <meta charset="utf-8" />
   <title>Сайт туристического городка в штате Аризона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <header>
-    <a href="index.html">
+  <header class="main-header">
+    <a class="main-header-logo" href="index.html">
       <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта для г. Седона" />
     </a>
     <nav aria-label="Навигация по сайту">
-      <ul>
+      <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
-        <li><a>Гостиницы</a></li>
+        <li class="site-navigation-current"><a>Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -24,10 +27,10 @@
   <main>
     <section>
       <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
-            <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="extended-searching-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <ul>
+          <ul class="infrastructure-list">
             <li>
               <input type="checkbox" name="swimming-pool" id="swimming-pool" checked />
               <label for="swimming-pool">Бассейн</label>
@@ -45,7 +48,7 @@
 
         <fieldset>
           <legend>Тип жилья:</legend>
-          <ul>
+          <ul class="type-of-housing-list">
             <li>
               <input type="checkbox" name="hotel" id="hotel" checked />
               <label for="hotel">Гостиница</label>
@@ -74,20 +77,20 @@
             <div></div>
             <button type="button"></button>
           </div>
-          <button type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
 
-    <section>
+    <section class="number-and-sorting">
       <h2 class="visually-hidden">Количество найденных отелей и сортировка</h2>
-      <p>Найдено: 3</p>
+      <p class="number-of-housing ">Найдено: 3</p>
 
       <h3>Сортировка:</h3>
-      <ul>
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По рейтингу</a></li>
+      <ul class="sorting-list">
+        <li><a class="active" href="#">По цене</a></li>
+        <li><a class="not-active" href="#">По типу</a></li>
+        <li><a class="not-active" href="#">По рейтингу</a></li>
       </ul>
 
       <div>
@@ -104,11 +107,11 @@
       </div>
     </section>
 
-    <section>
+    <section class="found-housing">
       <h2 class="visually-hidden">Найденное жилье</h2>
 
-      <ul>
-        <li>
+      <ul class="found-housing-list">
+        <li class="found-housing-item">
           <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa" />
           <div>
             <h3><a href="#">Amara Resort & Spa</a></h3>
@@ -117,8 +120,8 @@
               <span>от 4000 р.</span>
             </div>
             <div>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a class="button button-blue" href="#">Подробнее</a>
+              <a class="button button-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div>
@@ -126,7 +129,7 @@
             <span>Рейтинг: 8,5</span>
           </div>
         </li>
-        <li>
+        <li class="found-housing-item">
           <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn" />
           <div>
             <h3><a href="#">Desert Quail Inn</a></h3>
@@ -135,8 +138,8 @@
               <span>от 3000 р.</span>
             </div>
             <div>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a class="button button-blue" href="#">Подробнее</a>
+              <a class="button button-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div>
@@ -144,7 +147,7 @@
             <span>Рейтинг: 8,9</span>
           </div>
         </li>
-        <li>
+        <li class="found-housing-item">
           <img src="img/villas-at-poco-diablo.jpg" width="135" height="90"
             alt="Фото апартеманетов Villas at Poco Diablo" />
           <div>
@@ -155,8 +158,8 @@
               <span>от 2000 р.</span>
             </div>
             <div>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a class="button button-blue" href="#">Подробнее</a>
+              <a class="button button-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div>
@@ -169,23 +172,25 @@
   </main>
 
   <footer>
-    <div>
-      <p>#Visitsedona</p>
-      <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
-    </div>
-    <div>
-      <ul>
-        <li><a href="#" aria-label="Седона в Твиттере"></a></li>
-        <li><a href="#" aria-label="Седона на Фейсбуке"></a></li>
-        <li><a href="#" aria-label="Седона на Ютубе"></a></li>
-      </ul>
-    </div>
+    <div class="main-footer">
+      <div class="contacts">
+        <p class="sedona-hashtag">#Visitsedona</p>
+        <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+      </div>
+      <div>
+        <ul class="socialmedia-list">
+          <li class="socialmedia-item"><a href="#" aria-label="Седона в Твиттере"></a></li>
+          <li class="socialmedia-item"><a href="#" aria-label="Седона на Фейсбуке"></a></li>
+          <li class="socialmedia-item"><a href="#" aria-label="Седона на Ютубе"></a></li>
+        </ul>
+      </div>
 
-    <p>
-      Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"
-          alt="Логотип HTML Academy" /></a>
-    </p>
+      <p class="copyright">
+        Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"
+            alt="Логотип HTML Academy" /></a>
+      </p>
+    </div>
   </footer>
 </body>
 
