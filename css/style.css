@@ -263,6 +263,33 @@ html {
   font-weight: 700;
 }
 
+input[type="checkbox"]+label::before {
+  content: "";
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  vertical-align: top;
+  margin-right: 17px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked+label::before {
+  content: "";
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  vertical-align: top;
+  margin-right: 17px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:disabled+label::before {
+  opacity: 0.3;
+}
+
+
 .filter-button {
   font-size: 14px;
   line-height: 21px;
