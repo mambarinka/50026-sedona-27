@@ -289,6 +289,11 @@ input[type="checkbox"]:disabled+label::before {
   opacity: 0.3;
 }
 
+.price-range input[type="text"] {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
 
 .filter-button {
   font-size: 14px;
@@ -410,6 +415,15 @@ input[type="checkbox"]:disabled+label::before {
   color: #000000;
 }
 
+.found-housing h3>a:hover,
+.found-housing h3>a:focus {
+  color: #81b3d2;
+}
+
+.found-housing h3>a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .found-housing-list {
   list-style: none;
 }
@@ -420,6 +434,27 @@ input[type="checkbox"]:disabled+label::before {
 
 .found-housing-item:last-child {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.housing-star {
+  display: inline-block;
+  font-size: 0;
+  height: 17px;
+  background-image: url("../img/star.svg");
+  background-size: 18px 17px;
+  background-repeat: space;
+}
+
+.housing-star-four {
+  width: 89px;
+}
+
+.housing-star-three {
+  width: 66px;
+}
+
+.housing-star-two {
+  width: 41px;
 }
 
 /* ПОДВАЛ */
