@@ -32,6 +32,8 @@ html {
   box-sizing: inherit;
 }
 
+/* ОБЩИЕ СТИЛИ */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -86,7 +88,6 @@ html {
 /* HEADER  */
 
 .main-header {
-
   line-height: 26px;
   font-weight: 700;
 
@@ -138,16 +139,13 @@ html {
   background-color: #ffffff;
 }
 
-.intro-text p:first-child {
-  font-size: 21px;
+.intro-text p {
   line-height: 26px;
-  font-weight: 700;
-  color: #000000;
 }
 
-.intro-text p:last-child {
-  line-height: 26px;
-  color: #333333;
+.intro-text b {
+  font-size: 21px;
+  color: #000000;
 }
 
 /* ПРЕИМУЩЕСТВА И РЕКОМЕНДАЦИИ */
@@ -337,6 +335,31 @@ html {
   border: none;
 }
 
+.button-up path,
+.button-down path {
+  fill: #cacaca;
+}
+
+.button-up path:hover,
+.button-up path:focus,
+.button-down path:hover,
+.button-down path:focus {
+  fill: #231f20;
+}
+
+.button-up path:active,
+.button-down path:active {
+  fill: #81b3d2;
+}
+
+.active path,
+.active path:hover,
+.active path:focus,
+.active path:active {
+  fill: #81b3d2;
+}
+
+
 /* НАЙДЕННОЕ ЖИЛЬЕ */
 
 .found-housing {
@@ -382,7 +405,33 @@ html {
   list-style: none;
 }
 
+.socialmedia-item a {
+  background-color: #81b3d2;
+}
+
+.socialmedia-item a:hover,
+.socialmedia-item a:focus {
+  background-color: #669ec0;
+}
+
+.socialmedia-item a:active {
+  background-color: #5496bd;
+}
+
+.socialmedia-item path:active {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 .copyright {
   line-height: 26px;
   color: #000000;
+}
+
+.logo-htmlacademy path:hover,
+.logo-htmlacademy path:focus {
+  fill: #81b3d2;
+}
+
+.logo-htmlacademy path:active {
+  fill: #bdbbbc;
 }
