@@ -160,12 +160,12 @@ html {
   text-align: center;
 }
 
-.feature-item:nth-child(-n+2) {
-  background-color: #81b3d2;
+.feature-item {
+  background-color: #eeeeee;
 }
 
-.feature-item:nth-child(n+3) {
-  background-color: #eeeeee;
+.feature-item-blue {
+  background-color: #81b3d2;
 }
 
 .recommendations-list {
@@ -308,31 +308,41 @@ html {
   font-weight: 400;
 }
 
-.sorting-list .active {
-  color: #81b3d2;
-}
-
-.sorting-list .not-active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.sorting-list .not-active:hover,
-.sorting-list .not-active:focus {
-  color: #81b3d2;
-}
-
-.sorting-list .not-active:active {
-  color: #000000;
-}
-
-.sorting-list li:nth-child(n+2),
-.sorting-list li:nth-child(n+2):hover,
-.sorting-list li:nth-child(n+2):focus {
+.sorting-item,
+.sorting-item:hover,
+.sorting-item:focus {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-list li:nth-child(n+2):active {
-  border: none;
+.sorting-item:active {
+  border-bottom: none;
+}
+
+.sorting-item-active,
+.sorting-item-active:hover,
+.sorting-item-active:focus,
+.sorting-item-active:active {
+  border-bottom: none;
+}
+
+.sorting-button {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-button:hover,
+.sorting-button:focus {
+  color: #81b3d2;
+}
+
+.sorting-button:active {
+  color: #000000;
+}
+
+.sorting-button-active,
+.sorting-button-active:hover,
+.sorting-button-active:focus,
+.sorting-button-active:active {
+  color: #81b3d2;
 }
 
 .button-up path,
