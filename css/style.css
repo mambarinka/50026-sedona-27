@@ -34,6 +34,14 @@ html {
 
 /* ОБЩИЕ СТИЛИ */
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+  /* background-color: #ffffff; */
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -92,10 +100,26 @@ html {
   font-weight: 700;
 
   background-color: #ffffff;
+  margin-bottom: 75px;
+}
+
+.main-header-logo {
+  display: block;
+  text-align: center;
+  margin-bottom: -72px;
 }
 
 .site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.site-navigation li {
+  width: 239px;
+  padding: 22px 75px;
 }
 
 .site-navigation a {
