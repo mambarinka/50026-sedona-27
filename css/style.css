@@ -38,7 +38,8 @@ html {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0;
-  /* background-color: #ffffff; */
+
+  background-color: #ffffff;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -99,14 +100,15 @@ html {
   line-height: 26px;
   font-weight: 700;
 
-  background-color: #ffffff;
   margin-bottom: 75px;
 }
 
 .main-header-logo {
   display: block;
-  text-align: center;
-  margin-bottom: -72px;
+  width: 140px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: -77px;
 }
 
 .site-navigation {
@@ -119,7 +121,13 @@ html {
 
 .site-navigation li {
   width: 239px;
-  padding: 22px 75px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 75px;
+}
+
+.site-navigation li:nth-child(4n-2) {
+  margin-right: auto;
 }
 
 .site-navigation a {
@@ -147,8 +155,13 @@ html {
 .intro-banner {
   background-color: #81B3D2;
   background-image: url("../img/background-photo.jpg");
-  background-position: top center;
+  background-position: top -75px;
   background-repeat: no-repeat;
+}
+
+.intro-banner img {
+  display: block;
+  margin: 0 auto;
 }
 
 .intro-banner:after {
