@@ -408,19 +408,19 @@ input[type="checkbox"]:disabled+label::before {
   background-color: #ffffff;
 }
 
-.found-housing h3>a {
+.found-housing .found-housing-name {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
 
-.found-housing h3>a:hover,
-.found-housing h3>a:focus {
+.found-housing .found-housing-name:hover,
+.found-housing .found-housing-name:focus {
   color: #81b3d2;
 }
 
-.found-housing h3>a:active {
+.found-housing .found-housing-name:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
