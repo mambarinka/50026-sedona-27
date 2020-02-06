@@ -99,8 +99,6 @@ html {
 .main-header {
   line-height: 26px;
   font-weight: 700;
-
-  margin-bottom: 75px;
 }
 
 .main-header-logo {
@@ -155,17 +153,23 @@ html {
 .intro-banner {
   background-color: #81B3D2;
   background-image: url("../img/background-photo.jpg");
-  background-position: top -75px;
+  background-position: center -56px;
   background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 76px;
+  height: 509px;
 }
 
 .intro-banner img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; 
+  margin-bottom: 80px; 
 }
 
-.intro-banner:after {
+.intro-banner::after {
+  position:relative;
   content: url("../img/intro-mask.svg");
+  top: -57px;
 }
 
 /* ВВЕДЕНИЕ */
@@ -174,9 +178,13 @@ html {
   text-align: center;
 
   background-color: #ffffff;
+  padding-top: 65px;
+  padding-bottom: 57px;
 }
 
 .intro-text p {
+  width: 500px;
+  margin: 0 auto;
   line-height: 26px;
 }
 
@@ -189,16 +197,60 @@ html {
 
 .features-list,
 .recommendations-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.features-list {
+  justify-content: space-around;
+}
+
+.recommendations-list {
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 82px;
 }
 
 .feature-item,
 .recommendation-item {
-  text-align: center;
+  text-align: center; 
 }
 
-.feature-item {
+.feature-item {  
+  width: 313px;;
   background-color: #eeeeee;
+}
+
+.recommendation-item {
+  width: 304px;
+}
+
+.recommendation-item-housing {
+  padding-top: 100px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.recommendation-item-food {
+  padding-top: 100px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.recommendation-item-souvenirs {
+  padding-top: 100px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.feature-item-blue {
+  width: 100%;
 }
 
 .feature-item-blue {
@@ -215,6 +267,7 @@ html {
   line-height: 21px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
 }
 
 .feature-item-first h3,
