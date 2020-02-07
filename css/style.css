@@ -12,6 +12,13 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
+
+  /*  background-color: #ffffff;
+  background-image: url("../img/sedona-index-EXAMPLE.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0.3;
+  OUTLINE: 4px solid green; */
 }
 
 img {
@@ -162,12 +169,12 @@ html {
 
 .intro-banner img {
   display: block;
-  margin: 0 auto; 
-  margin-bottom: 80px; 
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .intro-banner::after {
-  position:relative;
+  position: relative;
   content: url("../img/intro-mask.svg");
   top: -57px;
 }
@@ -178,19 +185,22 @@ html {
   text-align: center;
 
   background-color: #ffffff;
-  padding-top: 65px;
+  padding-top: 55px;
   padding-bottom: 57px;
 }
 
 .intro-text p {
   width: 500px;
   margin: 0 auto;
+
   line-height: 26px;
 }
 
-.intro-text b {
+.intro-text .intro-text-caption {
   font-size: 21px;
+  font-weight: 700;
   color: #000000;
+  padding-bottom: 25px;
 }
 
 /* ПРЕИМУЩЕСТВА И РЕКОМЕНДАЦИИ */
@@ -199,29 +209,31 @@ html {
 .recommendations-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
+  outline: 4px solid purple;
 }
 
 .features-list {
-  justify-content: space-around;
+  background-color: #eeeeee;
 }
 
 .recommendations-list {
-  justify-content: space-around;
   padding-top: 60px;
   padding-bottom: 82px;
+  background-color: #ffffff;
 }
 
 .feature-item,
 .recommendation-item {
-  text-align: center; 
+  text-align: center;
+  outline: 4px solid blue;
 }
 
-.feature-item {  
-  width: 313px;;
-  background-color: #eeeeee;
+.feature-item {
+  width: 313px;
 }
 
 .recommendation-item {
@@ -251,14 +263,25 @@ html {
 
 .feature-item-blue {
   width: 100%;
-}
-
-.feature-item-blue {
   background-color: #81b3d2;
 }
 
-.recommendations-list {
-  background-color: #ffffff;
+.feature-item-blue h3 {
+  color: #ffffff;
+}
+
+.wrapper-item-blue {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.feature-item-first {
+
+  color: #ffffff;
+ 
+  padding-top: 45px;
+  padding-bottom: 55px;
 }
 
 .features-list h3,
@@ -270,11 +293,8 @@ html {
   margin: 0;
 }
 
-.feature-item-first h3,
-.feature-item-second h3,
-.feature-item-first,
-.feature-item-second {
-  color: #ffffff;
+.feature-item-first h3 {
+  color: #ffffff; 
 }
 
 /* ПОИСК ГОСТИНИЦ (+ МОДАЛЬНОЕ ОКНО) */
