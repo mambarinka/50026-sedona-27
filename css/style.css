@@ -343,10 +343,14 @@ html {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .hotel-search p {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  width: 445px;
 }
 
 .hotel-search .button-brown,
@@ -382,6 +386,7 @@ html {
 
 .sedona-map {
   text-align: center;
+  outline: 4px solid lightseagreen;
 }
 
 /* ФОРМА ПОИСКА ГОСТИНИЦЫ НА ВНУТРЕННЕЙ СТРАНИЦЕ */
@@ -610,6 +615,7 @@ input[type="checkbox"]:disabled+label::before {
   text-align: center;
   background-color: #ffffff;
   opacity: 0.9;
+  outline: 4px solid lightseagreen;
 }
 
 .contacts a,
