@@ -203,9 +203,80 @@ html {
   padding-bottom: 25px;
 }
 
-/* ПРЕИМУЩЕСТВА И РЕКОМЕНДАЦИИ */
+/* ПРЕИМУЩЕСТВА */
 
-.features-list,
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.feature-item-blue {
+  width: 100%;
+  background-color: #81b3d2;
+}
+
+.wrapper-item-blue {
+  display: flex;
+}
+
+.wrapper-text {
+  color: #ffffff;
+
+  padding-top: 45px;
+  padding-bottom: 55px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  width: 313px;
+  padding-top: 40px;
+  padding-bottom: 58px;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+
+  padding-bottom: 20px;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.wrapper-text h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+
+  padding-bottom: 20px;
+  width: 151px;
+  margin: 0 auto;
+}
+
+.wrapper-text p,
+.feature-item p {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.wrapper-text p {
+  width: 305px;  
+}
+
+.feature-item p {
+  width: 260px;
+}
+
+/* РЕКОМЕНДАЦИИ */
+
 .recommendations-list {
   display: flex;
   flex-wrap: wrap;
@@ -213,27 +284,10 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 4px solid purple;
-}
-
-.features-list {
-  background-color: #eeeeee;
-}
-
-.recommendations-list {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 82px;
   background-color: #ffffff;
-}
-
-.feature-item,
-.recommendation-item {
-  text-align: center;
-  outline: 4px solid blue;
-}
-
-.feature-item {
-  width: 313px;
 }
 
 .recommendation-item {
@@ -261,30 +315,6 @@ html {
   background-position: center top;
 }
 
-.feature-item-blue {
-  width: 100%;
-  background-color: #81b3d2;
-}
-
-.feature-item-blue h3 {
-  color: #ffffff;
-}
-
-.wrapper-item-blue {
-  display: flex;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.feature-item-first {
-
-  color: #ffffff;
- 
-  padding-top: 45px;
-  padding-bottom: 55px;
-}
-
-.features-list h3,
 .recommendations-list h3 {
   font-size: 21px;
   line-height: 21px;
@@ -293,8 +323,10 @@ html {
   margin: 0;
 }
 
-.feature-item-first h3 {
-  color: #ffffff; 
+.recommendation-item p {
+  width: 285px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
 /* ПОИСК ГОСТИНИЦ (+ МОДАЛЬНОЕ ОКНО) */
@@ -303,6 +335,7 @@ html {
   text-align: center;
   line-height: 24px;
   background-color: #ffffff;
+  padding-top: 50px;
 }
 
 .hotel-search h2 {
@@ -310,6 +343,10 @@ html {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+}
+
+.hotel-search p {
+  margin: 0;
 }
 
 .hotel-search .button-brown,
