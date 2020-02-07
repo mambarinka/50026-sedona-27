@@ -613,11 +613,16 @@ input[type="checkbox"]:disabled+label::before {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
   background-color: #ffffff;
   opacity: 0.9;
   padding: 33px 123px;
   margin-top: -118px;
+}
+
+.contacts {
+width: 235px;
 }
 
 .contacts a,
@@ -634,6 +639,8 @@ input[type="checkbox"]:disabled+label::before {
 
 .socialmedia-list {
   display: flex;
+  justify-content: space-between;
+  width: 150px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -641,10 +648,13 @@ input[type="checkbox"]:disabled+label::before {
 
 .socialmedia-item {
   width: 46px;
-  outline: 4px solid blue;
 }
 
 .socialmedia-item a {
+  display: block;
+  width: 46px;
+  height: 48px;
+  line-height: 48px;
   background-color: #81b3d2;
 }
 
@@ -665,6 +675,7 @@ input[type="checkbox"]:disabled+label::before {
   line-height: 26px;
   color: #000000;
   margin: 0;
+  width: 200px;
 }
 
 .logo-htmlacademy {
