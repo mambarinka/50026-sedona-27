@@ -208,7 +208,6 @@ html {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -234,7 +233,7 @@ html {
 }
 
 .feature-item {
-  width: 313px;
+  width: 400px;
   padding-top: 40px;
   padding-bottom: 58px;
 }
@@ -280,7 +279,6 @@ html {
 .recommendations-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -291,7 +289,7 @@ html {
 }
 
 .recommendation-item {
-  width: 304px;
+  width: 400px;
 }
 
 .recommendation-item-housing {
