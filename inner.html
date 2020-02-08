@@ -9,22 +9,24 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="inner-page">
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-      <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта для г. Седона" />
-    </a>
-    <nav aria-label="Навигация по сайту">
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="media.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
-        <li class="site-navigation-current"><a>Гостиницы</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта для г. Седона" />
+      </a>
+      <nav aria-label="Навигация по сайту">
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li class="site-navigation-current"><a>Гостиницы</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <section>
       <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
       <form class="extended-searching-form" action="https://echo.htmlacademy.ru" method="get">
@@ -114,7 +116,7 @@
       <ul class="found-housing-list">
         <li class="found-housing-item">
           <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa" />
-          <div>
+          <div class="wrapper-housing-info">
             <h3><a class="found-housing-name" href="#">Amara Resort & Spa</a></h3>
             <div>
               <span>Гостиница</span>
@@ -125,14 +127,14 @@
               <a class="button button-brown" href="#">Забронировать</a>
             </div>
           </div>
-          <div>
+          <div class="wrapper-housing-rating">
             <span class="housing-star housing-star-four">4 звезды</span>
             <span class="housing-rating">Рейтинг: 8,5</span>
           </div>
         </li>
         <li class="found-housing-item">
           <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn" />
-          <div>
+          <div class="wrapper-housing-info">
             <h3><a class="found-housing-name" href="#">Desert Quail Inn</a></h3>
             <div>
               <span>Мотель</span>
@@ -143,7 +145,7 @@
               <a class="button button-brown" href="#">Забронировать</a>
             </div>
           </div>
-          <div>
+          <div class="wrapper-housing-rating">
             <span class="housing-star housing-star-three">3 звезды</span>
             <span class="housing-rating">Рейтинг: 8,9</span>
           </div>
@@ -151,7 +153,7 @@
         <li class="found-housing-item">
           <img src="img/villas-at-poco-diablo.jpg" width="135" height="90"
             alt="Фото апартеманетов Villas at Poco Diablo" />
-          <div>
+          <div class="wrapper-housing-info">
             <h3><a class="found-housing-name" href="#">Villas at Poco Diablo</a></h3>
 
             <div>
@@ -163,7 +165,7 @@
               <a class="button button-brown" href="#">Забронировать</a>
             </div>
           </div>
-          <div>
+          <div class="wrapper-housing-rating">
             <span class="housing-star housing-star-two">2 звезды</span>
             <span class="housing-rating">Рейтинг: 9,2</span>
           </div>
@@ -172,7 +174,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="container">
     <div class="main-footer">
       <div class="contacts">
         <p class="sedona-hashtag">#Visitsedona</p>
