@@ -13,7 +13,7 @@ body {
 
   background-color: #f2f2f2;
 
-  /*  background-color: #ffffff;
+/*    background-color: #ffffff;
   background-image: url("../img/sedona-index-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -234,8 +234,8 @@ html {
 
 .feature-item {
   width: 400px;
-  padding-top: 40px;
-  padding-bottom: 58px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .feature-item h3 {
@@ -244,7 +244,7 @@ html {
   font-weight: 700;
   color: #000000;
 
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   width: 130px;
   margin: 0 auto;
 }
@@ -271,7 +271,8 @@ html {
 }
 
 .feature-item p {
-  width: 260px;
+  width: 261px;  
+  margin-bottom: 22px;
 }
 
 /* РЕКОМЕНДАЦИИ */
@@ -284,7 +285,6 @@ html {
   list-style: none;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 82px;
   background-color: #ffffff;
 }
 
@@ -325,6 +325,7 @@ html {
   width: 285px;
   margin: 0 auto;
   margin-top: 15px;
+  margin-bottom: 85px;
 }
 
 /* ПОИСК ГОСТИНИЦ (+ МОДАЛЬНОЕ ОКНО) */
@@ -347,12 +348,13 @@ html {
 
 .hotel-search p {
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-top: 35px;
+  margin-bottom: 62px;
   width: 445px;
 }
 
 .hotel-search .button-brown,
-.hotel-search .button-blue {
+.modal .button-blue {
   font-size: 21px;
   line-height: 26px;
 }
@@ -384,6 +386,7 @@ html {
 
 .sedona-map {
   text-align: center;
+  
 }
 
 /* ФОРМА ПОИСКА ГОСТИНИЦЫ НА ВНУТРЕННЕЙ СТРАНИЦЕ */
@@ -616,7 +619,7 @@ input[type="checkbox"]:disabled+label::before {
   background-color: #ffffff;
   opacity: 0.9;
   padding: 33px 123px;
-  margin-top: -118px;
+  margin-top: -123px;
 }
 
 .contacts {
