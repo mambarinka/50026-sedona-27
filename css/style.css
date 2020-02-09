@@ -11,14 +11,21 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #f2f2f2;
+  /*   background-color: #f2f2f2;
 
-  /*    background-color: #ffffff;
+     background-color: #ffffff;
   background-image: url("../img/sedona-index-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   opacity: 0.3;
   OUTLINE: 4px solid green; */
+
+  background-color: #ffffff;
+  background-image: url("../img/sedona-hotels-EXAMPLE.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0.4;
+  OUTLINE: 4px solid green;
 }
 
 img {
@@ -127,9 +134,9 @@ html {
 
 .site-navigation li {
   width: 239px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 75px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  text-align: center;
 }
 
 .site-navigation li:nth-child(4n-2) {
@@ -399,12 +406,15 @@ html {
 
 .sedona-map {
   text-align: center;
-
 }
 
 /* ФОРМА ПОИСКА ГОСТИНИЦЫ НА ВНУТРЕННЕЙ СТРАНИЦЕ */
 
 .extended-searching-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 72px;
+
   color: #ffffff;
 
   background-color: #263940;
@@ -415,17 +425,32 @@ html {
 
 .infrastructure-list,
 .type-of-housing-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  width: 250px;
+}
+
+.infrastructure-list li,
+.type-of-housing-list li {
+  margin-bottom: 22px;
+}
+
+.infrastructure-list li:last-child,
+.type-of-housing-list li:last-child {
+  margin-bottom: 0;
 }
 
 .extended-searching-form fieldset {
   border: none;
+  padding: 0;
 }
 
 .extended-searching-form legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
 input[type="checkbox"]+label::before {
@@ -454,6 +479,11 @@ input[type="checkbox"]:disabled+label::before {
   opacity: 0.3;
 }
 
+.price-range {
+  width: 330px;
+  margin-left: auto;
+}
+
 .price-range input[type="text"] {
   color: #ffffff;
   background-color: transparent;
@@ -477,18 +507,28 @@ input[type="checkbox"]:disabled+label::before {
 /* КОЛИЧЕСТВО И СОРТИРОВКА */
 
 .number-and-sorting {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 30px 72px;
   background-color: #ffffff;
 }
 
 .number-of-housing {
-  font-size: 21;
+  width: 140px;
+  margin: 0;
+
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-
 }
 
 .number-and-sorting h3 {
+  width: 120px;
+  margin: 0;
+  text-align: center;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -496,6 +536,10 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .sorting-list {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  padding-left: 18px;
   list-style: none;
 }
 
@@ -509,6 +553,7 @@ input[type="checkbox"]:disabled+label::before {
 .sorting-item:hover,
 .sorting-item:focus {
   display: inline-block;
+  padding-right: 30px;
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -543,6 +588,10 @@ input[type="checkbox"]:disabled+label::before {
   color: #81b3d2;
 }
 
+.sorting-triangle {
+  width: 34px;
+}
+
 .button-up path,
 .button-down path {
   fill: #cacaca;
@@ -566,7 +615,6 @@ input[type="checkbox"]:disabled+label::before {
 .active path:active {
   fill: #81b3d2;
 }
-
 
 /* НАЙДЕННОЕ ЖИЛЬЕ */
 
@@ -594,6 +642,8 @@ input[type="checkbox"]:disabled+label::before {
 .found-housing-item {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 31px;
+  padding-bottom: 31px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -604,6 +654,10 @@ input[type="checkbox"]:disabled+label::before {
 .wrapper-housing-info {
   flex-grow: 1;
   margin-left: 30px;
+}
+
+.wrapper-housing-info h3 {
+  margin: 0;
 }
 
 .found-housing .found-housing-name {
