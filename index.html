@@ -9,35 +9,30 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="container">
   <header class="main-header">
-    <div class="container">
-      <a class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта для г. Седона" />
-      </a>
-      <nav aria-label="Навигация по сайту">
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="inner.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a class="main-header-logo">
+      <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта для г. Седона" />
+    </a>
+    <nav aria-label="Навигация по сайту">
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="media.html">Фото и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="inner.html">Гостиницы</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Сайт туристического городка Седона</h1>
-
-    <div class="container">
-      <div class="intro-banner">
-        <img class="intro-banner-welcome" src="img/intro-welcome.svg" width="459" height="353"
-          alt="Welcome to the gorgeous Sedona" />
-      </div>
-      <div class="intro-text">
-        <p class="intro-text-caption"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </div>
+    <div class="intro-banner">
+      <img class="intro-banner-welcome" src="img/intro-welcome.svg" width="459" height="353"
+        alt="Welcome to the gorgeous Sedona" />
+    </div>
+    <div class="intro-text">
+      <p class="intro-text-caption"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
 
     <section>
@@ -111,7 +106,7 @@
       <section class="modal">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="searching-item">
             <label for="check-in">Дата заезда:</label>
             <input type="text" name="check-in" id="check-in" value="24 апреля 2017" />
@@ -148,7 +143,7 @@
     </div>
   </main>
 
-  <footer class="container">
+  <footer>
     <div class="main-footer">
       <div class="contacts">
         <p class="sedona-hashtag">#Visitsedona</p>
