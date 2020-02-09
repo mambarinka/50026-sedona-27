@@ -235,10 +235,7 @@ html {
 
 .wrapper-text {
   color: #ffffff;
-
-  padding-top: 45px;
-  padding-bottom: 55px;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 .feature-item {
