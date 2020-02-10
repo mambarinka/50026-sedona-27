@@ -190,9 +190,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 76px;
-  height: 509px;
-  /* без фикс высоты не получается обрезать фон */
-
+  min-height: 509px;
 }
 
 .intro-banner img {
