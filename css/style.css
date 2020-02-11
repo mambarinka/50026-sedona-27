@@ -679,7 +679,6 @@ input[type="checkbox"]:disabled+label::before {
 
 .found-housing-item {
   display: flex;
-  flex-wrap: wrap;
   padding-top: 31px;
   padding-bottom: 31px;
   border-top: 1px solid #e5e5e5;
@@ -705,7 +704,7 @@ input[type="checkbox"]:disabled+label::before {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: #000000;  
 }
 
 .wrapper-housing-rating {
