@@ -30,6 +30,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -56,13 +57,30 @@ html {
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -120,7 +138,7 @@ html {
   width: 140px;
   height: 72px;
   margin: 0 auto;
-  margin-bottom: -77px;
+  margin-bottom: -72px;
 }
 
 .site-navigation {
