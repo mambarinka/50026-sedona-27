@@ -13,19 +13,19 @@ body {
 
   background-color: #f2f2f2;
 
-  /*   background-color: #ffffff;
+  /*     background-color: #ffffff;
   background-image: url("../img/sedona-index-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   opacity: 0.3;
   OUTLINE: 4px solid green; */
 
-  /*     background-color: #ffffff;
+  background-color: #ffffff;
   background-image: url("../img/sedona-hotels-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   opacity: 0.4;
-  OUTLINE: 4px solid green; */
+  OUTLINE: 4px solid green;
 }
 
 img {
@@ -56,17 +56,6 @@ html {
 
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
-
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
@@ -152,8 +141,8 @@ input[type="checkbox"].visually-hidden {
 
 .site-navigation li {
   width: 241px;
-  padding-top: 18px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* каждый 2, 6, 10 и т.д. элемент отодвигает элементы справа */
@@ -220,7 +209,7 @@ input[type="checkbox"].visually-hidden {
 .intro-banner::after {
   position: absolute;
   content: url("../img/intro-mask.svg");
-  width: 1200px;
+  width: auto;
   height: 57px;
   bottom: 0;
 }
@@ -231,8 +220,8 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 
   background-color: #ffffff;
-  padding-top: 55px;
-  padding-bottom: 57px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .intro-text p {
@@ -246,7 +235,7 @@ input[type="checkbox"].visually-hidden {
   font-size: 21px;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 /* ПРЕИМУЩЕСТВА */
@@ -272,8 +261,9 @@ input[type="checkbox"].visually-hidden {
 }
 
 .wrapper-text {
+  width: 400px;
   color: #ffffff;
-  margin: auto auto;
+  padding: 50px;
 }
 
 .feature-item {
@@ -299,7 +289,7 @@ input[type="checkbox"].visually-hidden {
   font-weight: 700;
   color: #ffffff;
 
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   width: 151px;
   margin: 0 auto;
 }
@@ -316,7 +306,7 @@ input[type="checkbox"].visually-hidden {
 
 .feature-item p {
   width: 261px;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 /* РЕКОМЕНДАЦИИ */
@@ -370,7 +360,7 @@ input[type="checkbox"].visually-hidden {
   width: 285px;
   margin: 0 auto;
   margin-top: 15px;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
 }
 
 /* ПОИСК ГОСТИНИЦ (+ МОДАЛЬНОЕ ОКНО) */
@@ -392,13 +382,12 @@ input[type="checkbox"].visually-hidden {
   font-weight: 700;
   color: #000000;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .hotel-search p {
   margin: 0 auto;
-  margin-top: 35px;
-  margin-bottom: 85px;
+  margin-bottom: 46px;
   width: 445px;
 }
 
@@ -406,6 +395,10 @@ input[type="checkbox"].visually-hidden {
 .searching-form .button-blue {
   font-size: 21px;
   line-height: 26px;
+}
+
+.hotel-search .button-brown {
+  padding: 32px 140px;
 }
 
 .searching-form {
@@ -438,6 +431,24 @@ input[type="checkbox"].visually-hidden {
 .searching-item label {
   line-height: 26px;
   font-weight: 700;
+}
+
+/* .button-calendar {
+  width: 21px;
+  height: 23px;
+  vertical-align: middle;
+
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  border: none;
+
+  
+} */
+
+.searching-form .button-blue {
+  padding: 14px 196px;
 }
 
 /* КАРТА */
@@ -672,6 +683,9 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .found-housing-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -679,8 +693,8 @@ input[type="checkbox"]:disabled+label::before {
 
 .found-housing-item {
   display: flex;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 27px;
+  padding-bottom: 30px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -704,7 +718,14 @@ input[type="checkbox"]:disabled+label::before {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;  
+  color: #000000;
+}
+
+.type-and-price span {
+  display: inline-block;
+  width: 100px;
+  margin-right: 6px;
+  text-align: left;;
 }
 
 .wrapper-housing-rating {
@@ -742,6 +763,11 @@ input[type="checkbox"]:disabled+label::before {
   background-color: #f2f2f2;
 }
 
+.wrapper-housing-info .button-blue,
+.wrapper-housing-info .button-brown {
+  padding: 4px 17px;
+}
+
 /* ПОДВАЛ */
 
 .main-footer {
@@ -752,7 +778,7 @@ input[type="checkbox"]:disabled+label::before {
   background-color: #ffffff;
   opacity: 0.9;
   padding: 30px 100px;
-  margin-top: -123px;
+  margin-top: -120px;
 }
 
 .inner-page .main-footer {
