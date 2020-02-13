@@ -501,11 +501,14 @@ transform: translateX(-50%);
 }
 
 .searching-item svg:hover,
-.searching-item svg:focus {
+.searching-item svg:focus,
+.searching-item rect:hover,
+.searching-item rect:focus {
   fill: #000000;
 }
 
-.searching-item svg:active {
+.searching-item svg:active,
+.searching-item rect:active {
   fill: #81b3d2;
 }
 
@@ -888,7 +891,9 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .socialmedia-item a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
   line-height: 48px;
