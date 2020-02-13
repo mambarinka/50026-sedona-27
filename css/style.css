@@ -220,9 +220,8 @@ transform: translateX(-50%);
   background-image: url("../img/background-photo.jpg");
   background-position: center -56px;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 76px;
   min-height: 509px;
+  padding-top: 76px;
 }
 
 .intro-banner img {
@@ -534,7 +533,7 @@ transform: translateX(-50%);
 
   background-color: #263940;
   background-image: url("../img/filter-background.jpg");
-  background-position: top center;
+  background-position: center -56px;
   background-repeat: no-repeat;
 }
 
