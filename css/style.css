@@ -476,6 +476,7 @@ transform: translateX(-50%);
   line-height: 26px;
   font-weight: 700;
   text-align: left;
+  vertical-align: middle;
   color: #000000;
 }
 
@@ -780,6 +781,7 @@ input[type="checkbox"]:disabled+label::before {
 .sorting-item:focus {
   display: inline-block;
   margin-right: 30px;
+  vertical-align: middle;
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -905,6 +907,7 @@ input[type="checkbox"]:disabled+label::before {
   width: 100px;
   margin-right: 6px;
   text-align: left;
+  vertical-align: middle;
 }
 
 .buttons-booking {
