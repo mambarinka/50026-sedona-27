@@ -13,7 +13,7 @@ body {
 
   background-color: #f2f2f2;
 
-  /*     background-color: #ffffff;
+  /*         background-color: #ffffff;
   background-image: url("../img/sedona-index-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -444,6 +444,11 @@ transform: translateX(-50%);
   margin-bottom: 29px;
 }
 
+.wrapper-background {
+  display: flex;
+  background-color: #f2f2f2;
+}
+
 .searching-item input {
   font: inherit;
   line-height: 26px;
@@ -460,7 +465,8 @@ transform: translateX(-50%);
 }
 
 .searching-item input:focus {
-  background-color: transparent;
+  background-color: #ffffff;
+  ;
   border: 2px solid #e5e5e5;
 }
 
@@ -470,6 +476,7 @@ transform: translateX(-50%);
   line-height: 26px;
   font-weight: 700;
   text-align: left;
+  color: #000000;
 }
 
 .searching-item .label-children {
@@ -527,7 +534,7 @@ transform: translateX(-50%);
 .extended-searching-form {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 72px;
+  padding: 29px 72px;
 
   color: #ffffff;
 
@@ -594,22 +601,127 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .price-range {
-  width: 330px;
+  width: 321px;
   margin-left: auto;
 }
 
-.price-range input[type="text"] {
+.price-range input[type="number"] {
   color: #ffffff;
   background-color: transparent;
+}
+
+.price-range legend {
+  margin-bottom: 8px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 38px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
   border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 155px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+  line-height: 21px;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+
+  width: 20px;
+  height: 20px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }
 
 .filter-button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
   font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  background-color: transparent;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
   border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -844,12 +956,12 @@ input[type="checkbox"]:disabled+label::before {
 .main-footer {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
   background-color: #ffffff;
   opacity: 0.9;
-  padding: 35px 100px;
-  margin-top: -120px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-top: -130px;
+  min-height: 120px;
 }
 
 .inner-page .main-footer {
@@ -857,9 +969,8 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .contacts {
-  width: 255px;
-  padding-left: 20px;
-  margin-right: 170px;
+  width: 400px;
+  padding-left: 130px;
   text-align: left;
 }
 
@@ -873,13 +984,15 @@ input[type="checkbox"]:disabled+label::before {
 
 .sedona-hashtag {
   margin: 0;
+  margin-bottom: 5px;
 }
 
 .socialmedia-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 150px;
+  justify-content: center;
+  ;
+  width: 400px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -887,6 +1000,11 @@ input[type="checkbox"]:disabled+label::before {
 
 .socialmedia-item {
   width: 46px;
+  margin-right: 6px;
+}
+
+.socialmedia-item:last-child {
+  margin-right: 0;
 }
 
 .socialmedia-item a {
@@ -913,16 +1031,21 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .copyright {
-  line-height: 26px;
   color: #000000;
   margin: 0;
   margin-left: auto;
-  width: 200px;
+  width: 400px;
+  text-align: center;
+}
+
+.copyright span {
+  display: inline-block;
+  verical-align: middle;
 }
 
 .logo-htmlacademy {
   position: relative;
-  top: 14px;
+  top: 8px;
 }
 
 .logo-htmlacademy path:hover,

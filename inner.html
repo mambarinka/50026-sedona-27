@@ -66,17 +66,20 @@
 
         <fieldset class="price-range">
           <legend>Стоимость в сутки (Р):</legend>
-          <label class="visually-hidden" for="min-cost">Выбрать минимальную стоимость</label>
-          <span>От</span>
-          <input type="text" name="min-cost" id="min-cost" value="0" />
-          <label class="visually-hidden" for="max-cost">Выбрать максимальную стоимость</label>
-          <span>До</span>
-          <input type="text" name="max-cost" id="max-cost" value="3000" />
-          <div>
-            <button type="button"></button>
-            <div></div>
-            <button type="button"></button>
+
+          <div class="price-controls">
+            <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
           </div>
+
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+
           <button class="button filter-button" type="submit">Показать</button>
         </fieldset>
       </form>
