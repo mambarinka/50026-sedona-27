@@ -1038,11 +1038,6 @@ input[type="checkbox"]:disabled+label::before {
   text-align: center;
 }
 
-.copyright span {
-  display: inline-block;
-  verical-align: middle;
-}
-
 .logo-htmlacademy {
   position: relative;
   top: 8px;
