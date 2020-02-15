@@ -13,14 +13,14 @@ body {
 
   background-color: #f2f2f2;
 
-  background-color: #ffffff;
+/*     background-color: #ffffff;
   background-image: url("../img/sedona-index-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   opacity: 0.3;
-  OUTLINE: 4px solid green;
+  OUTLINE: 4px solid green; */
 
-  /*   background-color: #ffffff;
+/*   background-color: #ffffff;
   background-image: url("../img/sedona-hotels-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -146,7 +146,8 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: -72px;
 }
 
-/* .main-header-logo {
+/* второй вариант вставки лого
+.main-header-logo {
 position: absolute;
 width: 140px;
 height: 72px;
@@ -245,7 +246,7 @@ transform: translateX(-50%);
 
   background-color: #ffffff;
   padding-top: 60px;
-  margin-bottom: 52px;
+  padding-bottom: 52px;
 }
 
 .intro-text p {
@@ -412,7 +413,7 @@ transform: translateX(-50%);
 
 .hotel-search p {
   margin: 0 auto;
-  margin-bottom: 47px;
+  margin-bottom: 43px;
   width: 445px;
 }
 
@@ -445,7 +446,6 @@ transform: translateX(-50%);
   display: flex;
   align-items: center;
   width: 100%;
-  outline: 2px solid red;
 }
 
 .wrapper-background {
@@ -469,7 +469,7 @@ transform: translateX(-50%);
 }
 
 .searching-item input:focus {
-  background-color: #ffffff;  
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
@@ -535,7 +535,7 @@ transform: translateX(-50%);
 .extended-searching-form {
   display: flex;
   flex-wrap: wrap;
-  padding: 29px 72px;
+  padding: 30px 72px;
 
   color: #ffffff;
 
@@ -602,7 +602,7 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .price-range {
-  width: 321px;
+  width: 314px;
   margin-left: auto;
 }
 
@@ -646,14 +646,17 @@ input[type="checkbox"]:disabled+label::before {
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+  width: 155px;
+  padding-left: 64px;
+}
+
 .price-controls .max-price {
   width: 155px;
-  padding-left: 65px;
+  padding-left: 55px;
 }
 
 .price-controls input {
@@ -711,8 +714,8 @@ input[type="checkbox"]:disabled+label::before {
 
 .filter-button {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 85px;
+  padding: 6px 34px;
 
   font-size: 14px;
   line-height: 20px;
@@ -736,8 +739,8 @@ input[type="checkbox"]:disabled+label::before {
 .number-and-sorting {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  padding: 30px 72px;
+  align-items: center;
+  padding: 31px 72px;
   background-color: #ffffff;
 }
 
@@ -817,6 +820,8 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .sorting-triangle {
+  display: flex;
+  justify-content: space-between;
   width: 34px;
 }
 
@@ -874,8 +879,8 @@ input[type="checkbox"]:disabled+label::before {
 
 .found-housing-item {
   display: flex;
-  padding-top: 27px;
-  padding-bottom: 30px;
+  padding-top: 26px;
+  padding-bottom: 32px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -905,7 +910,7 @@ input[type="checkbox"]:disabled+label::before {
 .type-and-price span {
   display: inline-block;
   width: 100px;
-  margin-right: 6px;
+  margin-right: 12px;
   text-align: left;
   vertical-align: middle;
 }
@@ -945,7 +950,7 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .housing-rating {
-  padding: 5px 10px;
+  padding: 2px 12px;
   background-color: #f2f2f2;
 }
 
@@ -959,7 +964,8 @@ input[type="checkbox"]:disabled+label::before {
 .main-footer {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;;
+  align-items: center;
+  ;
   background-color: #ffffff;
   opacity: 0.9;
   padding-top: 36px;
@@ -974,7 +980,7 @@ input[type="checkbox"]:disabled+label::before {
 
 .contacts {
   width: 400px;
-  padding-left: 130px;
+  padding-left: 124px;
   text-align: left;
 }
 
@@ -995,7 +1001,6 @@ input[type="checkbox"]:disabled+label::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  ;
   width: 400px;
   margin: 0;
   padding: 0;
@@ -1035,16 +1040,17 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #000000;
   margin: 0;
   margin-left: auto;
   width: 400px;
-  text-align: center;
 }
 
-.logo-htmlacademy {
-  position: relative;
-  top: 8px;
+.copyright span {
+  margin-right: 8px;
 }
 
 .logo-htmlacademy path:hover,
