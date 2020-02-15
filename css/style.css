@@ -413,7 +413,7 @@ transform: translateX(-50%);
 
 .hotel-search p {
   margin: 0 auto;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   width: 445px;
 }
 
@@ -424,21 +424,16 @@ transform: translateX(-50%);
 }
 
 .hotel-search .button-brown {
-  padding: 32px 140px;
+  padding: 31px 140px;
 }
 
 .searching-form {
-  display: flex;
-  flex-wrap: wrap;
   position: absolute;
   width: 568px;
   min-height: 395px;
   left: 50%;
   margin-left: -284px;
-  padding-left: 55px;
-  padding-right: 55px;
-  padding-top: 35px;
-  padding-bottom: 57px;
+  padding: 55px;
   background-color: #ffffff;
 }
 
@@ -446,6 +441,12 @@ transform: translateX(-50%);
   display: flex;
   align-items: center;
   width: 100%;
+  margin-bottom: 29px;
+}
+
+.wrapper-numbers {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .wrapper-background {
@@ -489,6 +490,7 @@ transform: translateX(-50%);
 
 .searching-item-numbers {
   width: 229px;
+  margin-bottom: 55px;
 }
 
 .searching-item-numbers input {
@@ -976,6 +978,7 @@ input[type="checkbox"]:disabled+label::before {
 
 .inner-page .main-footer {
   margin-top: 0;
+  padding-top: 30px;
 }
 
 .contacts {
