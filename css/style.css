@@ -13,12 +13,12 @@ body {
 
   background-color: #f2f2f2;
 
-  /*         background-color: #ffffff;
+  background-color: #ffffff;
   background-image: url("../img/sedona-index-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   opacity: 0.3;
-  OUTLINE: 4px solid green; */
+  OUTLINE: 4px solid green;
 
   /*   background-color: #ffffff;
   background-image: url("../img/sedona-hotels-EXAMPLE.jpg");
@@ -245,7 +245,7 @@ transform: translateX(-50%);
 
   background-color: #ffffff;
   padding-top: 60px;
-  padding-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .intro-text p {
@@ -330,7 +330,8 @@ transform: translateX(-50%);
 
 .feature-item p {
   width: 261px;
-  margin-bottom: 15px;
+  padding-top: 5px;
+  margin-bottom: 10px;
 }
 
 /* РЕКОМЕНДАЦИИ */
@@ -377,14 +378,14 @@ transform: translateX(-50%);
   font-weight: 700;
   color: #000000;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .recommendation-item p {
   width: 285px;
   margin: 0 auto;
   margin-top: 15px;
-  margin-bottom: 80px;
+  margin-bottom: 82px;
 }
 
 /* ПОИСК ГОСТИНИЦ (+ МОДАЛЬНОЕ ОКНО) */
@@ -411,7 +412,7 @@ transform: translateX(-50%);
 
 .hotel-search p {
   margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
   width: 445px;
 }
 
@@ -433,15 +434,18 @@ transform: translateX(-50%);
   min-height: 395px;
   left: 50%;
   margin-left: -284px;
-  padding: 55px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 35px;
+  padding-bottom: 57px;
   background-color: #ffffff;
 }
 
 .searching-item {
   display: flex;
   align-items: center;
-  width: 458px;
-  margin-bottom: 29px;
+  width: 100%;
+  outline: 2px solid red;
 }
 
 .wrapper-background {
@@ -465,8 +469,7 @@ transform: translateX(-50%);
 }
 
 .searching-item input:focus {
-  background-color: #ffffff;
-  ;
+  background-color: #ffffff;  
   border: 2px solid #e5e5e5;
 }
 
@@ -508,19 +511,16 @@ transform: translateX(-50%);
 }
 
 .searching-item svg:hover,
-.searching-item svg:focus,
-.searching-item rect:hover,
-.searching-item rect:focus {
+.searching-item svg:focus {
   fill: #000000;
 }
 
-.searching-item svg:active,
-.searching-item rect:active {
+.searching-item svg:active {
   fill: #81b3d2;
 }
 
 .searching-form .button-blue {
-  padding: 14px 196px;
+  padding: 16px 196px;
   margin-top: auto;
 }
 
@@ -959,6 +959,7 @@ input[type="checkbox"]:disabled+label::before {
 .main-footer {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;;
   background-color: #ffffff;
   opacity: 0.9;
   padding-top: 36px;
