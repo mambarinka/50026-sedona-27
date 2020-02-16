@@ -13,19 +13,20 @@ body {
 
   background-color: #f2f2f2;
 
-/*     background-color: #ffffff;
+      background-color: #ffffff;
   background-image: url("../img/sedona-index-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   opacity: 0.3;
-  OUTLINE: 4px solid green; */
+  
+  OUTLINE: 4px solid green;
 
-/*   background-color: #ffffff;
+    background-color: #ffffff;
   background-image: url("../img/sedona-hotels-EXAMPLE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   opacity: 0.4;
-  OUTLINE: 4px solid green; */
+  OUTLINE: 4px solid green;
 }
 
 img {
@@ -246,7 +247,7 @@ transform: translateX(-50%);
 
   background-color: #ffffff;
   padding-top: 60px;
-  padding-bottom: 52px;
+  padding-bottom: 51px;
 }
 
 .intro-text p {
@@ -260,7 +261,7 @@ transform: translateX(-50%);
   font-size: 21px;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 /* ПРЕИМУЩЕСТВА */
@@ -288,7 +289,7 @@ transform: translateX(-50%);
 .wrapper-text {
   width: 400px;
   color: #ffffff;
-  padding: 50px;
+  padding: 48px;
 }
 
 .feature-item {
@@ -303,7 +304,7 @@ transform: translateX(-50%);
   font-weight: 700;
   color: #000000;
 
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   width: 130px;
   margin: 0 auto;
 }
@@ -314,25 +315,23 @@ transform: translateX(-50%);
   font-weight: 700;
   color: #ffffff;
 
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   width: 151px;
   margin: 0 auto;
 }
 
-.wrapper-text p,
-.feature-item p {
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
 .wrapper-text p {
   width: 305px;
+  margin: 0 auto;
+  margin-top: 21px;
 }
 
 .feature-item p {
   width: 261px;
+  margin: 0 auto;
   padding-top: 5px;
   margin-bottom: 10px;
+  margin-top: 17px;
 }
 
 /* РЕКОМЕНДАЦИИ */
@@ -379,7 +378,7 @@ transform: translateX(-50%);
   font-weight: 700;
   color: #000000;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .recommendation-item p {
@@ -408,12 +407,12 @@ transform: translateX(-50%);
   font-weight: 700;
   color: #000000;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .hotel-search p {
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   width: 445px;
 }
 
@@ -486,6 +485,7 @@ transform: translateX(-50%);
 
 .searching-item .label-children {
   padding-left: 50px;
+  margin-right: 10px;
 }
 
 .searching-item-numbers {
@@ -537,7 +537,10 @@ transform: translateX(-50%);
 .extended-searching-form {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 72px;
+  padding-top: 28px;
+  padding-right: 71px;
+  padding-bottom: 31px;
+  padding-left: 71px;
 
   color: #ffffff;
 
@@ -604,7 +607,7 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .price-range {
-  width: 314px;
+  width: 315px;
   margin-left: auto;
 }
 
@@ -614,13 +617,13 @@ input[type="checkbox"]:disabled+label::before {
 }
 
 .price-range legend {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .price-controls {
   position: relative;
 
-  height: 38px;
+  height: 36px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -646,7 +649,7 @@ input[type="checkbox"]:disabled+label::before {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 35px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -742,12 +745,12 @@ input[type="checkbox"]:disabled+label::before {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 31px 72px;
+  padding: 30px 72px;
   background-color: #ffffff;
 }
 
 .number-of-housing {
-  width: 140px;
+  width: 141px;
   margin: 0;
 
   font-size: 21px;
@@ -759,8 +762,8 @@ input[type="checkbox"]:disabled+label::before {
 .number-and-sorting h3 {
   width: 120px;
   margin: 0;
+  padding-top: 5px;
   text-align: center;
-
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -854,8 +857,6 @@ input[type="checkbox"]:disabled+label::before {
 /* НАЙДЕННОЕ ЖИЛЬЕ */
 
 .found-housing {
-  padding-left: 72px;
-  padding-right: 72px;
   background-color: #ffffff;
 }
 
@@ -875,19 +876,21 @@ input[type="checkbox"]:disabled+label::before {
   list-style: none;
   margin: 0;
   padding: 0;
-
-  min-height: 453px;
 }
 
 .found-housing-item {
   display: flex;
-  padding-top: 26px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-top: 1px solid #e5e5e5;
 }
 
 .found-housing-item:last-child {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.found-housing-item img {
+  margin-left: 72px;
 }
 
 .wrapper-housing-info {
@@ -899,14 +902,16 @@ input[type="checkbox"]:disabled+label::before {
 
 .wrapper-housing-info h3 {
   margin: 0;
-  margin-bottom: 8px;
+  margin-top:-2px;
+  margin-bottom: 7px;
 }
 
 .found-housing .found-housing-name {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 700;
   color: #000000;
+  vertical-align: top;
 }
 
 .type-and-price span {
@@ -928,6 +933,7 @@ input[type="checkbox"]:disabled+label::before {
   align-items: flex-end;
   width: 110px;
   margin-left: auto;
+  margin-right: 72px;
 }
 
 .housing-star {
@@ -970,15 +976,12 @@ input[type="checkbox"]:disabled+label::before {
   ;
   background-color: #ffffff;
   opacity: 0.9;
-  padding-top: 36px;
-  padding-bottom: 36px;
-  margin-top: -130px;
+  margin-top: -125px;
   min-height: 120px;
 }
 
 .inner-page .main-footer {
   margin-top: 0;
-  padding-top: 30px;
 }
 
 .contacts {
