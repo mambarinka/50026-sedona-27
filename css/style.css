@@ -214,7 +214,6 @@ transform: translateX(-50%);
 .intro-banner img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 80px;
 }
 
 .intro-banner::after {
