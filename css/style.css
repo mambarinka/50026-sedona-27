@@ -454,9 +454,8 @@ transform: translateX(-50%);
 }
 
 .searching-item input:focus {
-  padding: 2px 8px;
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 
 .searching-item label {
@@ -986,6 +985,7 @@ input[type="checkbox"]:disabled+label::before {
 .inner-page .main-footer {
   position: absolute;
   top: 0;
+  opacity: 1;
 }
 
 .contacts {
