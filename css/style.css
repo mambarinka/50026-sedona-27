@@ -498,12 +498,18 @@ transform: translateX(-50%);
   vertical-align: middle;
 }
 
-.searching-item svg:hover,
-.searching-item svg:focus {
+.button-calendar:hover path,
+.button-calendar:focus path,
+.button-minus:hover path,
+.button-minus:focus path,
+.button-plus:hover path,
+.button-plus:focus path {
   fill: #000000;
 }
 
-.searching-item svg:active {
+.button-calendar:active path,
+.button-minus:active path,
+.button-plus:active path {
   fill: #81b3d2;
 }
 
@@ -783,50 +789,36 @@ input[type="checkbox"]:disabled+label::before {
   list-style: none;
 }
 
-.sorting-list a {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  border-bottom: 1px dotted #81b3d2;
-}
-
-.sorting-item,
-.sorting-item:hover,
-.sorting-item:focus {
+.sorting-item {
   display: inline-block;
   margin-right: 29px;
   vertical-align: middle;
 }
 
-.sorting-item:active {
-  border-bottom: none;
-}
-
-.sorting-item-active,
-.sorting-item-active:hover,
-.sorting-item-active:focus,
-.sorting-item-active:active {
-  border-bottom: none;
-}
-
-.sorting-button {
+.sorting-item .sorting-button {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-button:hover,
-.sorting-button:focus {
+.sorting-item .sorting-button:hover,
+.sorting-item .sorting-button:focus {
   color: #81b3d2;
 }
 
-.sorting-button:active {
+.sorting-item .sorting-button:active {
   color: #000000;
+  border-bottom: none;
 }
 
-.sorting-button-active,
-.sorting-button-active:hover,
-.sorting-button-active:focus,
-.sorting-button-active:active {
+.sorting-item .sorting-button-active,
+.sorting-item .sorting-button-active:hover,
+.sorting-item .sorting-button-active:focus,
+.sorting-item .sorting-button-active:active {
   color: #81b3d2;
+  border-bottom: none;
 }
 
 .sorting-triangle {
@@ -835,27 +827,22 @@ input[type="checkbox"]:disabled+label::before {
   width: 34px;
 }
 
-.button-up path,
-.button-down path {
-  fill: #cacaca;
-}
-
-.button-up path:hover,
-.button-up path:focus,
-.button-down path:hover,
-.button-down path:focus {
+.button-up:hover path,
+.button-up:focus path,
+.button-down:hover path,
+.button-down:focus path {
   fill: #231f20;
 }
 
-.button-up path:active,
-.button-down path:active {
+.button-up:active path,
+.button-down:active path {
   fill: #81b3d2;
 }
 
-.active path,
-.active path:hover,
-.active path:focus,
-.active path:active {
+.button-active path,
+.button-active:hover path,
+.button-active:focus path,
+.button-active:active path {
   fill: #81b3d2;
 }
 
@@ -1066,7 +1053,7 @@ input[type="checkbox"]:disabled+label::before {
   background-color: #5496bd;
 }
 
-.icon .fill-svg:active {
+.icon:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
