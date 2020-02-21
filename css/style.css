@@ -374,9 +374,36 @@ transform: translateX(-50%);
 
 /* ПОИСК ГОСТИНИЦ (+ МОДАЛЬНОЕ ОКНО) */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal {
   position: relative;
   z-index: 4;
+  display: block;
+  
+ 
+}
+
+.modal-close {
+  display: none;
+
+  animation: bounce 0.6s;
 }
 
 .hotel-search {
