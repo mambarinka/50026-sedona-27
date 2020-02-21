@@ -16,7 +16,7 @@ body {
 
 img {
   max-width: 100%;
-  /*   height: auto; */
+  /*    height: auto; */
 }
 
 a {
@@ -516,8 +516,8 @@ transform: translateX(-50%);
 
 .sedona-map {
   position: relative;
+  min-height: 593px;
 }
-
 
 .sedona-map img {
   position: absolute;
@@ -787,6 +787,7 @@ input[type="checkbox"]:disabled+label::before {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-item,
@@ -795,7 +796,6 @@ input[type="checkbox"]:disabled+label::before {
   display: inline-block;
   margin-right: 29px;
   vertical-align: middle;
-  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-item:active {
@@ -1039,11 +1039,15 @@ input[type="checkbox"]:disabled+label::before {
   margin-right: 6px;
 }
 
-.socialmedia-item:last-child {
+.socialmedia-item:nth-child(7n) {
   margin-right: 0;
 }
 
-.socialmedia-item a {
+.socialmedia-item:nth-child(n+8) {
+  margin-top: 6px;
+}
+
+.socialmedia-item .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1053,16 +1057,16 @@ input[type="checkbox"]:disabled+label::before {
   background-color: #81b3d2;
 }
 
-.socialmedia-item a:hover,
-.socialmedia-item a:focus {
+.socialmedia-item .icon:hover,
+.socialmedia-item .icon:focus {
   background-color: #669ec0;
 }
 
-.socialmedia-item a:active {
+.socialmedia-item .icon:active {
   background-color: #5496bd;
 }
 
-.socialmedia-item path:active {
+.icon .fill-svg:active {
   fill: rgba(255, 255, 255, 0.3);
 }
 
