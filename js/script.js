@@ -1,7 +1,7 @@
 var link = document.querySelector("section.hotel-search .button-brown");
 var popup = document.querySelector(".modal");
 var form = popup.querySelector("form");
-var chekin = popup.querySelector("[name=check-in]");
+var cheсkin = popup.querySelector("[name=check-in]");
 var chekout = popup.querySelector("[name=check-out]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
@@ -33,8 +33,11 @@ link.addEventListener("click", function (evt) {
     popup.classList.add("modal-bounce");
     popup.classList.remove("modal-error");
     chekin.focus()
-    if (storageAdults && storageChildren) {
+    if (storageAdults) {
         adults.value = storageAdults;
+    }
+
+    if (storageChildren) {
         children.value = storageChildren;
     }
 });
@@ -43,7 +46,7 @@ link.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
 
-    if (!chekin.value || !checkout.value) {
+    if (!cheсkin.value || !checkout.value) {
         evt.preventDefault();
         popup.classList.remove("modal-error");
         popup.offsetWidth = popup.offsetWidth;
