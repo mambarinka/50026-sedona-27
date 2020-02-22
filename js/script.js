@@ -32,7 +32,7 @@ link.addEventListener("click", function (evt) {
     popup.classList.toggle("modal-close");
     popup.classList.add("modal-bounce");
     popup.classList.remove("modal-error");
-    chekin.focus()
+    cheсkin.focus()
     if (storageAdults) {
         adults.value = storageAdults;
     }
