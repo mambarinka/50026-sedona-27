@@ -392,18 +392,46 @@ transform: translateX(-50%);
   }
 }
 
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: relative;
   z-index: 4;
   display: block;
-  
- 
 }
 
 .modal-close {
   display: none;
-
   animation: bounce 0.6s;
+}
+
+.modal-bounce {
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .hotel-search {
@@ -435,6 +463,7 @@ transform: translateX(-50%);
 }
 
 .hotel-search .button-brown {
+  display: inline-block;
   padding: 30px 140px;
 }
 
@@ -484,6 +513,35 @@ transform: translateX(-50%);
 .searching-item input:focus {
   background-color: #ffffff;
   outline: 2px solid #e5e5e5;
+}
+
+.searching-item input::-moz-placeholder,
+:-moz-placeholder {
+  opacity: 1;
+}
+
+.searching-item input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.searching-item input::-moz-placeholder {
+  color: #000000;
+}
+
+.searching-item input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.searching-item input::-ms-input-placeholder {
+  color: #000000;
+}
+
+.searching-item input:-moz-placeholder {
+  color: #000000;
+}
+
+.searching-item input::placeholder {
+  color: #000000;
 }
 
 .searching-item label {
