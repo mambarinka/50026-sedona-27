@@ -1155,11 +1155,11 @@ input[type="checkbox"]:disabled+label::before {
   margin-right: 8px;
 }
 
-.logo-htmlacademy path:hover,
-.logo-htmlacademy path:focus {
+.logo-htmlacademy:hover path,
+.logo-htmlacademy:focus path {
   fill: #81b3d2;
 }
 
-.logo-htmlacademy path:active {
+.logo-htmlacademy:active path {
   fill: #bdbbbc;
 }
