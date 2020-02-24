@@ -376,11 +376,11 @@ transform: translateX(-50%);
 
 @keyframes bounce {
   0% {
-    transform: translateY(-135px);
+    transform: translateY(-110px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(-20px);
   }
 
   90% {
