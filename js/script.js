@@ -2,7 +2,7 @@ var link = document.querySelector("section.hotel-search .button-brown");
 var popup = document.querySelector(".modal");
 var form = popup.querySelector("form");
 var checkin = popup.querySelector("[name=check-in]");
-var chekout = popup.querySelector("[name=check-out]");
+var checkout = popup.querySelector("[name=check-out]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
 
