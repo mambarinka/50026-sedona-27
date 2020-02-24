@@ -46,7 +46,7 @@ link.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
 
-    if (!checkin.value || !checkout.value) {
+    if (!checkin.value || !checkout.value || !adults.value || !children.value) {
         evt.preventDefault();
         popup.classList.remove("modal-error");
         popup.offsetWidth = popup.offsetWidth;
