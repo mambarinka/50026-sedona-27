@@ -376,7 +376,7 @@ transform: translateX(-50%);
 
 @keyframes bounce {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-135px);
   }
 
   70% {
@@ -461,6 +461,8 @@ transform: translateX(-50%);
 }
 
 .hotel-search .button-brown {
+  position: relative;
+  z-index: 5;
   display: inline-block;
   padding: 30px 140px;
 }
