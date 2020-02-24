@@ -33,6 +33,12 @@ link.addEventListener("click", function (evt) {
     popup.classList.add("modal-bounce");
     popup.classList.remove("modal-error");
     checkin.focus();
+    if (!checkout.value) {
+        checkout.focus();
+        if (!checkin.value) {
+            checkin.focus();
+        }
+    }
     if (storageAdults) {
         adults.value = storageAdults;
     }
@@ -59,15 +65,4 @@ form.addEventListener("submit", function (evt) {
         }
     }
 });
-
-window.addEventListener("keydown", function(evt) {
-    if (evt.keyCode === 27) {
-    
-      if (form.classList.contains("form-show")) {
-        form.classList.add ("form-hide");
-        form.classList.remove("form-error");
-      }
-    }
-  });
-
 
