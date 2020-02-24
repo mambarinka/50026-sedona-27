@@ -60,5 +60,14 @@ form.addEventListener("submit", function (evt) {
     }
 });
 
+window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+    
+      if (form.classList.contains("form-show")) {
+        form.classList.add ("form-hide");
+        form.classList.remove("form-error");
+      }
+    }
+  });
 
 
