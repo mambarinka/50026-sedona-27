@@ -16,7 +16,7 @@ body {
 
 img {
   max-width: 100%;
-  /*    height: auto; */
+  height: auto;
 }
 
 a {
@@ -268,6 +268,7 @@ transform: translateX(-50%);
 .wrapper-item-blue {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .wrapper-text {
@@ -353,7 +354,7 @@ transform: translateX(-50%);
   padding-top: 100px;
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -5px;
 }
 
 .recommendations-list h3 {
@@ -601,6 +602,7 @@ transform: translateX(-50%);
 .searching-form .button-blue {
   padding: 16px 196px;
   margin-top: auto;
+  cursor: pointer;
 }
 
 /* КАРТА */
@@ -608,6 +610,7 @@ transform: translateX(-50%);
 .sedona-map {
   position: relative;
   min-height: 593px;
+  background-color: #cbdda9;
 }
 
 .sedona-map img {
@@ -683,7 +686,7 @@ input[type="checkbox"]+label::before {
   vertical-align: top;
   margin-right: 17px;
   background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
 }
 
 input[type="checkbox"]:checked+label::before {
@@ -699,6 +702,10 @@ input[type="checkbox"]:checked+label::before {
 
 input[type="checkbox"]:disabled+label::before {
   opacity: 0.3;
+}
+
+input[type="checkbox"]:focus+label::before {
+  outline: 2px solid #81b3d2;
 }
 
 .price-range {
@@ -948,6 +955,7 @@ input[type="checkbox"]:disabled+label::before {
 
 .found-housing-item {
   display: flex;
+  align-items: flex-start;  
   padding-top: 29px;
   padding-bottom: 29px;
   border-top: 1px solid #e5e5e5;
@@ -1019,13 +1027,14 @@ input[type="checkbox"]:disabled+label::before {
 
 .housing-star {
   display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 48px;
   font-size: 0;
   height: 17px;
   background-image: url("../img/star.svg");
   background-size: 18px 17px;
   background-repeat: space;
-  margin-bottom: 48px;
-}
+  }
 
 .housing-star-four {
   width: 89px;
