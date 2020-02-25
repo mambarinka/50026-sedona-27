@@ -25,6 +25,10 @@ try {
     isStorageSupport = false;
 }
 
+/* если js сработал, то скрываем форму */
+
+popup.classList.add("modal-close");
+
 /* описание обработчика событий по click */
 
 link.addEventListener("click", function (evt) {
