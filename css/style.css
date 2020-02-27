@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -83,6 +83,7 @@ input[type="checkbox"].visually-hidden {
 
 .button-brown:active {
   color: rgba(255, 255, 255, 0.3);
+
   background-color: #503e33;
 }
 
@@ -97,6 +98,7 @@ input[type="checkbox"].visually-hidden {
 
 .button-blue:active {
   color: rgba(255, 255, 255, 0.3);
+
   background-color: #5496bd;
 }
 
@@ -105,6 +107,7 @@ input[type="checkbox"].visually-hidden {
   cursor: default;
   opacity: 0.5;
   color: #ffffff;
+
   background-color: #81b3d2;
 }
 
@@ -113,6 +116,7 @@ input[type="checkbox"].visually-hidden {
   cursor: default;
   opacity: 0.5;
   color: #ffffff;
+
   background-color: #766357;
 }
 
@@ -121,6 +125,7 @@ input[type="checkbox"].visually-hidden {
 .main-header {
   line-height: 26px;
   font-weight: 700;
+
   background-color: #ffffff;
 }
 
@@ -203,12 +208,13 @@ transform: translateX(-50%);
 .intro-banner {
   position: relative;
   z-index: -1;
+  min-height: 509px;
+  padding-top: 76px;
+
   background-color: #81B3D2;
   background-image: url("../img/background-photo.jpg");
   background-position: center -56px;
   background-repeat: no-repeat;
-  min-height: 509px;
-  padding-top: 76px;
 }
 
 .intro-banner img {
@@ -228,10 +234,10 @@ transform: translateX(-50%);
 
 .intro-text {
   text-align: center;
-
-  background-color: #ffffff;
   padding-top: 60px;
   padding-bottom: 51px;
+
+  background-color: #ffffff;
 }
 
 .intro-text p {
@@ -242,10 +248,13 @@ transform: translateX(-50%);
 }
 
 .intro-text .intro-text-caption {
+  margin-bottom: 27px;
+
   font-size: 21px;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 27px;
+
+
 }
 
 /* ПРЕИМУЩЕСТВА */
@@ -255,13 +264,16 @@ transform: translateX(-50%);
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+
   list-style: none;
   text-align: center;
+
   background-color: #eeeeee;
 }
 
 .feature-item-blue {
   width: 100%;
+
   background-color: #81b3d2;
 }
 
@@ -273,8 +285,9 @@ transform: translateX(-50%);
 
 .wrapper-text {
   width: 400px;
-  color: #ffffff;
   padding: 46px;
+
+  color: #ffffff;
 }
 
 .feature-item {
@@ -284,39 +297,38 @@ transform: translateX(-50%);
 }
 
 .feature-item h3 {
+  width: 130px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
-
-  padding-bottom: 24px;
-  width: 130px;
-  margin: 0 auto;
 }
 
 .wrapper-text h3 {
+  width: 151px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
-
-  padding-bottom: 24px;
-  width: 151px;
-  margin: 0 auto;
 }
 
 .wrapper-text p {
   width: 305px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 21px;
 }
 
 .feature-item p {
   width: 261px;
-  margin: 0 auto;
+  margin: 16px auto 10px;
   padding-top: 5px;
-  margin-bottom: 10px;
-  margin-top: 16px;
 }
 
 /* РЕКОМЕНДАЦИИ */
@@ -326,9 +338,11 @@ transform: translateX(-50%);
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  padding-top: 60px;
+
   list-style: none;
   text-align: center;
-  padding-top: 60px;
+
   background-color: #ffffff;
 }
 
@@ -338,6 +352,7 @@ transform: translateX(-50%);
 
 .recommendation-item-housing {
   padding-top: 100px;
+
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -345,6 +360,7 @@ transform: translateX(-50%);
 
 .recommendation-item-food {
   padding-top: 100px;
+
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -352,35 +368,37 @@ transform: translateX(-50%);
 
 .recommendation-item-souvenirs {
   padding-top: 100px;
+
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: center -5px;
 }
 
 .recommendations-list h3 {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
-  margin: 0;
-  margin-bottom: 25px;
 }
 
 .recommendation-item p {
   width: 285px;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 81px;
+  margin: 15px auto 81px;
 }
 
 /* ПОИСК ГОСТИНИЦ (+ МОДАЛЬНОЕ ОКНО) */
 
 @keyframes bounce {
   0% {
+    -webkit-transform: translateY(-110px);
     transform: translateY(-110px);
   }
 
   100% {
+    -webkit-transform: translateY(0%);
     transform: translateY(0);
   }
 }
@@ -418,7 +436,7 @@ transform: translateX(-50%);
 }
 
 .modal-bounce {
-  animation: bounce 0.6s; 
+  animation: bounce 0.6s;
 }
 
 .modal-error {
@@ -426,25 +444,29 @@ transform: translateX(-50%);
 }
 
 .hotel-search {
+  padding-top: 50px;
+
   text-align: center;
   line-height: 24px;
+
   background-color: #ffffff;
-  padding-top: 50px;
 }
 
 .hotel-search h2 {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-  margin: 0;
-  margin-bottom: 25px;
 }
 
 .hotel-search p {
-  margin: 0 auto;
-  margin-bottom: 47px;
   width: 445px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 47px;
 }
 
 .hotel-search .button-brown,
@@ -462,11 +484,14 @@ transform: translateX(-50%);
 
 .searching-form {
   position: absolute;
+  left: 50%;
+
   width: 568px;
   min-height: 395px;
-  left: 50%;
+
   margin-left: -284px;
   padding: 55px;
+
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
@@ -485,18 +510,21 @@ transform: translateX(-50%);
 
 .wrapper-background {
   display: flex;
+
   background-color: #f2f2f2;
 }
 
 .searching-item input {
+  width: 308px;
+  padding: 6px 12px;
+
   font: inherit;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 6px 12px;
-  border: none;
-  width: 308px;
+
   background-color: #f2f2f2;
+  border: none;
 }
 
 .searching-item input:hover {
@@ -508,38 +536,75 @@ transform: translateX(-50%);
   outline: 2px solid #e5e5e5;
 }
 
-.searching-item input::-moz-placeholder,
-:-moz-placeholder {
-  opacity: 1;
-}
-
 .searching-item input::-webkit-input-placeholder {
   color: #000000;
-}
-
-.searching-item input::-moz-placeholder {
-  color: #000000;
-}
-
-.searching-item input:-ms-input-placeholder {
-  color: #000000;
-}
-
-.searching-item input::-ms-input-placeholder {
-  color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 .searching-item input:-moz-placeholder {
   color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
-.searching-item input::placeholder {
+.searching-item input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.searching-item input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.searching-item input::-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.searching-item input:focus::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.searching-item input:focus:-moz-placeholder {
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.searching-item input:focus::-moz-placeholder {
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.searching-item input:focus:-ms-input-placeholder {
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.searching-item input:focus::-ms-input-placeholder {
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.searching-item input::placeholder,
+.searching-item input:focus::placeholder {
   color: #000000;
 }
 
 .searching-item label {
   display: inline-block;
   width: 112px;
+
   line-height: 26px;
   font-weight: 700;
   text-align: left;
@@ -602,6 +667,7 @@ transform: translateX(-50%);
 .sedona-map {
   position: relative;
   min-height: 593px;
+
   background-color: #cbdda9;
 }
 
@@ -612,6 +678,7 @@ transform: translateX(-50%);
   z-index: 1;
 
   margin: 0;
+
   text-align: center;
 }
 
@@ -642,10 +709,11 @@ transform: translateX(-50%);
 
 .infrastructure-list,
 .type-of-housing-list {
+  width: 250px;
   margin: 0;
   padding: 0;
+
   list-style: none;
-  width: 250px;
 }
 
 .infrastructure-list li,
@@ -659,15 +727,17 @@ transform: translateX(-50%);
 }
 
 .extended-searching-form fieldset {
-  border: none;
   padding: 0;
+
+  border: none;
 }
 
 .extended-searching-form legend {
+  margin-bottom: 25px;
+
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
-  margin-bottom: 25px;
 }
 
 input[type="checkbox"]+label::before {
@@ -675,10 +745,12 @@ input[type="checkbox"]+label::before {
   display: inline-block;
   height: 23px;
   width: 23px;
-  vertical-align: top;
   margin-right: 17px;
+
+  vertical-align: top;
+
   background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 input[type="checkbox"]:checked+label::before {
@@ -686,8 +758,10 @@ input[type="checkbox"]:checked+label::before {
   display: inline-block;
   height: 23px;
   width: 27px;
-  vertical-align: top;
   margin-right: 13px;
+
+  vertical-align: top;
+
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
@@ -707,6 +781,7 @@ input[type="checkbox"]:focus+label::before {
 
 .price-range input[type="number"] {
   color: #ffffff;
+
   background-color: transparent;
 }
 
@@ -831,6 +906,7 @@ input[type="checkbox"]:focus+label::before {
 .filter-button:hover,
 .filter-button:focus {
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -841,6 +917,7 @@ input[type="checkbox"]:focus+label::before {
   flex-wrap: wrap;
   align-items: baseline;
   padding: 30px 72px;
+
   background-color: #ffffff;
 }
 
@@ -857,6 +934,7 @@ input[type="checkbox"]:focus+label::before {
 .number-and-sorting h3 {
   width: 120px;
   margin: 0;
+
   text-align: center;
   font-size: 12px;
   line-height: 18px;
@@ -870,6 +948,7 @@ input[type="checkbox"]:focus+label::before {
   margin: 0;
   padding: 0;
   padding-left: 18px;
+
   list-style: none;
 }
 
@@ -884,6 +963,7 @@ input[type="checkbox"]:focus+label::before {
   line-height: 18px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
+
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -894,6 +974,7 @@ input[type="checkbox"]:focus+label::before {
 
 .sorting-item .sorting-button:active {
   color: #000000;
+
   border-bottom: none;
 }
 
@@ -902,6 +983,7 @@ input[type="checkbox"]:focus+label::before {
 .sorting-item .sorting-button-active:focus,
 .sorting-item .sorting-button-active:active {
   color: #81b3d2;
+
   border-bottom: none;
 }
 
@@ -940,16 +1022,18 @@ input[type="checkbox"]:focus+label::before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .found-housing-item {
   display: flex;
-  align-items: flex-start;  
+  align-items: flex-start;
   padding-top: 29px;
   padding-bottom: 29px;
+
   border-top: 1px solid #e5e5e5;
 }
 
@@ -970,9 +1054,7 @@ input[type="checkbox"]:focus+label::before {
 }
 
 .wrapper-housing-info h3 {
-  margin: 0;
-  margin-top: -2px;
-  margin-bottom: 10px;
+  margin: -2px 0 10px;
 }
 
 .found-housing .found-housing-name {
@@ -1021,12 +1103,14 @@ input[type="checkbox"]:focus+label::before {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 48px;
-  font-size: 0;
   height: 17px;
+
+  font-size: 0;
+
   background-image: url("../img/star.svg");
   background-size: 18px 17px;
   background-repeat: space;
-  }
+}
 
 .housing-star-four {
   width: 89px;
@@ -1045,6 +1129,8 @@ input[type="checkbox"]:focus+label::before {
   width: 110px;
   min-height: 27px;
   padding: 2px 13px;
+  color: #666666;
+
   background-color: #f2f2f2;
 }
 
@@ -1062,14 +1148,17 @@ input[type="checkbox"]:focus+label::before {
 
 .main-footer {
   position: absolute;
+  bottom: 0;
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.9);
-  bottom: 0;
+
   min-height: 120px;
   padding-top: 33px;
   padding-bottom: 38px;
+
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .inner-page .main-footer {
@@ -1080,6 +1169,7 @@ input[type="checkbox"]:focus+label::before {
 .contacts {
   width: 400px;
   padding-left: 124px;
+
   text-align: left;
 }
 
@@ -1104,6 +1194,7 @@ input[type="checkbox"]:focus+label::before {
   width: 400px;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -1126,7 +1217,9 @@ input[type="checkbox"]:focus+label::before {
   justify-content: center;
   width: 46px;
   height: 48px;
+
   line-height: 48px;
+
   background-color: #81b3d2;
 }
 
@@ -1148,10 +1241,11 @@ input[type="checkbox"]:focus+label::before {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  width: 400px;
   margin: 0;
   margin-left: auto;
-  width: 400px;
+
+  color: #000000;
 }
 
 .copyright span {
